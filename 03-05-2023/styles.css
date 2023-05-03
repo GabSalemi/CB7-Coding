@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+    padding: 20px;
+    margin: 0;
+    text-align: center;
+    font-family: monospace;
+    background-color: rgb(44, 44, 44);
+}
+
+hr {
+
+    padding: 0;
+    border: 2px dotted rgb(242, 104, 132);
+}
+
+h1 {
+    color: rgb(241, 245, 165);
+    font-size: 4rem;
+}
+
+h2 {
+    color:rgb(149, 227, 187);
+    font-size: 3rem;
+}
+
+p {
+    font-size: 2rem;
+    color:rgb(83, 83, 171);
+}
