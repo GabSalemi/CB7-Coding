@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    
+</head>
+<body>
+    <header class="right__header">
+        <h1>CheckBooks</h1>
+        <div class="menu__icon">
+            <div class="sandwich__menu"></div>
+            <div class="sandwich__menu"></div>
+        </div>
+    </header>
+    <main>
+        <div class="menu__div">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#new_record">New</a></li>
+                <li><a href="#bookslist">Books</a></li>
+            </ul> 
+        </div>
+        
+        <!-- Contenuti pagina -->
+
+        <div class="div__container">
+            <div id="#about" class="first__div">
+                <form action="">
+                    <h2>Con <span>CheckBooks</span> puoi salvare i tuoi progressi di lettura!</h2>
+                    <a href=""><div class="begin__button">Iniziamo!</div></a>
+                    <p class="text__container"></p>
+                </form>
+            </div>
+            <div id="new_record"class="second__div">
+                <div class="record">
+                    <h2>Inserisci nel form le informazioni relative al libro</h2>
+                    <div class="record__container">
+                        <form action="" class="bookform">
+                            <label for="title"></label><input type="text" name="title" placeholder="Inserisci qui il titolo del libro">
+                            <label for="author"></label><input type="text" name="author" placeholder="Inserisci qui il nome dell'autore">
+                            <button type="submit" class="book__info" >Visualizza libro</button>
+                        </form>
+                    </div>
+                    <div class="submit__container">
+                        <p class="submit__text"></p>
+                        <h2>Aggiungi il libro nella tua lista personale</h2>
+                        <button type="submit" class="add__element">Aggiungi alla lista</button>
+                    </div>
+                </div>
+            </div>
+            <div id="bookslist" class="third__div">
+                <ul class="books__list">
+                    
+                </ul>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
