@@ -1,0 +1,184 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: monospace;
+   
+    
+}
+
+:root {
+    --primary-color:#03f755;
+    --secondary-color: #d6d6d6;
+    --tertiary-color: #02a098;
+    --back-color: #0a0a0a;
+    --line-color: #121a19;
+}
+
+/* Header */
+
+body {
+    background-color: var(--back-color);
+}
+
+.main__header {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    z-index: 9;
+    color: white;
+}
+
+h1, h2 {
+    width: 100%;
+    text-align: center;
+}
+
+h1 span {
+    color: var(--tertiary-color)
+}
+
+h2 span {
+    color: var(--primary-color)
+}
+
+
+
+
+
+/* Main container */
+
+.relative__container {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+} 
+
+.calculator__container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 375px;
+    height: 500px;
+    background-color: var(--back-color);
+}
+
+.calc__display {
+    width: 100%;
+    height: 20%;
+    border-radius: 50%;
+}
+
+.display__input {
+    width: 100%;
+    height: 100%;
+    font-size: 3rem;
+    background-color: var(--secondary-color);
+    color: var(--tertiary-color);
+}
+
+
+
+.calc__buttons {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+/* Buttons style */
+
+.calc__buttons button {
+    width: 25%;
+    height: 20%;
+    background-color: var(--back-color);
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    border: 0px;
+    outline: 1px solid var(--line-color);
+    animation: all 0.5s ease-in-out;
+
+}
+
+button:last-child {
+    color: var(--tertiary-color);
+}
+
+button:nth-child(4n) {
+    font-size: 2.5rem;
+    
+}
+
+button:nth-child(19) {
+    color: #ffb765;
+    font-size: 2rem;
+}
+
+button:hover {
+    border: 2px solid var(--line-color);
+}
+
+button:active {
+    background-color: var(--secondary-color);
+    border: 1px solid var(--tertiary-color);
+    color: var(--tertiary-color);
+}
+
+@media screen and (min-height: 668px) {
+    .calc__buttons button {
+        border-radius: 10px;
+    }
+    .display__input {
+        border-radius: 10px;
+    }
+}
+
+@media screen and (max-width: 376px) {
+    .calculator__container {
+        width: 100vw;
+    }
+    
+}
+
+
+/* h2, h3 {
+    color: var(--primary-color)
+}
+
+span {
+    color: var(--tertiary-color)
+}
+
+.general__container {
+    width: 100vw;
+    height: 200vh;
+    background-color: var(--back-color);
+    color: var(--primary-color);
+    position: relative;
+}
+
+
+.login__form {
+    width: 50%;
+    height: 25%;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    outline: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input {
+    background-color: var(--secondary-color);
+    color: var(--back-color);
+    text-align: center;
+} */
+
+
