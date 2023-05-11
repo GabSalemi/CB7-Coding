@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 5px;
+}
+
+.section__title {
+    font-size: 3rem;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: whitesmoke;
+}
+
+.sub__title {
+    font-size: 2.5rem;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(255, 255, 149);
+}
+
+label {
+    color: rgb(186, 186, 255);
+}
+
+input[type="text"], button, label, select, input[type="date"] {
+    font-size: 1.5rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-left: 20px;
+    margin-top: 20px;
+    max-width: 200px;
+}
+
+.list__div {
+    background-color: whitesmoke;
+
+}
+
+.added__item, .todo__item {
+    font-size: 1.5rem;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+li {
+    list-style: none;
+}
+
+.select:hover {
+    border: 1px solid #d3d3d380;
+}
+
+.select:active {
+    background-color: rgb(74, 96, 161);
+}
