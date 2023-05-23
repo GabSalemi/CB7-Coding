@@ -1,0 +1,126 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#root {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+#root h1 {
+    position: absolute;
+    left: -35%;
+    bottom: 20%;
+    transform: rotate(-90deg);
+    color: lightseagreen;
+    font-size: 4rem;
+
+}
+
+.root__firt-child {
+    width: 100vw;
+    height: 10vh;
+    background-color: lightsteelblue;
+    position: relative;
+}
+
+.root__second-child {
+    width: 100vw;
+    height: 90vh;
+    background-color: lightseagreen;
+}
+
+.root__first-child h1 {
+    color: lightseagreen;
+    font-size: 4rem;
+    position: absolute;
+    bottom: 0;
+    right: 10%;
+    
+}
+
+.credential__div {
+    width: 50vw;
+    height: 50vh;
+    color: lightseagreen;
+    background-color: lightsteelblue;
+    z-index: -2;
+}
+
+.cart__div {
+    width: 80vw;
+    height: 50vh;
+    color: lightsteelblue;
+    background-color: lightseagreen;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.hero__img {
+    width: 80%;
+    height: auto;
+    position: absolute;
+    right: -20px;
+    top: 120px;
+    transform: scaleY(-1) rotate(110deg);
+    z-index: -1;
+}
+
+.cart__text {
+    font-size: 2rem;
+}
+
+.product__div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 4px;
+    width: 80px;
+    height: 80px;
+    border-radius: 8px 10px 8px 0;
+    background-color: rgb(97, 241, 234);
+    position: relative;
+    
+}
+
+.product__div h3 {
+    font-size: 12px;
+    color: rgb(112, 94, 94);
+    margin: 2px;
+}
+
+.product__price {
+    position: absolute;
+    bottom: 2px;
+    right: 2px;
+    color: rgb(3, 55, 58);
+}
+
+.login__form {
+    position: absolute;
+    top: 20%;
+    left: 0%;
+    margin: 20px;
+    padding: 20px;
+    border: 1px dashed rgb(45, 45, 71);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+}
+
+
