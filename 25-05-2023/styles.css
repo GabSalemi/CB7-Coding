@@ -1,0 +1,144 @@
+* {
+    background-color: rgb(255, 255, 255);
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+#root {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    background-color: lightblue;
+}
+
+
+.main__div {
+    background-color: white;
+    height: 90%;
+    width: 90%;
+    text-align: center;
+}
+
+.main__title {
+    color: lightgreen;
+    font-size: 4rem;
+    height: 15%;
+    border: 0;
+    padding: 20px;
+}
+
+.break__line {
+    border-top: 5px dotted lightskyblue;
+    border-bottom: 0;
+    border-left: 0;
+    border-right: 0;
+    width: 100%;
+    height: 5%;
+    margin: 20px;
+}
+
+.page__descr { 
+    height: 80%;
+    width:  100%;
+    font-size: 3rem;
+    color: lightsalmon
+}
+
+.title__div {
+    width: 100%;
+    height: 30vh;
+    background-color: lightgreen;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.list__div {
+    background-color: lightgreen;
+    height: 70%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: first baseline;
+}
+
+.todo__div {
+    background-color: lightgreen;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.list__title {
+    color: white;
+    background-color: lightgreen;
+    height: 50%;
+    width: 100%;
+    font-size: 4rem;
+}
+
+.break__rule {
+    border-top: 10px dashed lightcoral;
+    background-color: lightgreen;
+    border-bottom: 0;
+    border-left: 0;
+    border-right: 0;
+    width: 100%;
+    height: 10%;
+    
+}
+
+.todo__element {
+    color: white;
+    background-color: lightgreen;
+}
+
+.input__form {
+    background-color: lightgreen;
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo__div {
+    background-color: rgb(114, 171, 114);
+    border-radius: 5px;
+    border-top-right-radius: 30px;
+    border: 1px solid white;
+    height: 8%;
+    width: 90%;
+    display: flex;
+    justify-content: left;
+}
+
+.todo__element {
+    background-color: transparent;
+    font-size: 1.2rem;
+
+
+}
+
+.done {
+    transform: translateX(-90%);
+}
+
+.cancel {
+    text-decoration: line-through;
+    color: lightcoral;
+    transform: translateX(0);
+}
