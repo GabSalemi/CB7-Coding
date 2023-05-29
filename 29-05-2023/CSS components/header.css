@@ -1,0 +1,151 @@
+.aside__container {
+    background-color: var(--color-black);
+    width: 30%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    position: sticky;
+    top: 0;
+}
+
+ /*  LOGO  */
+.logo__container {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+    transition: background-color 0.25s ease;
+}
+
+.logo__container:hover {
+    background-color: var(--color-hover);
+}
+
+.logo__container svg {
+    width: 24px;
+    height: auto;
+    fill: var(--color-text);
+}
+
+/* NAVBAR */
+
+
+
+
+.nav__item {
+    list-style: none;
+}
+
+
+.nav__item.active .item-link__logo {
+    color: var(--color-brand);
+}
+
+.nav__item.active .item-link__logo svg {
+    fill: var(--color-brand);
+}
+
+.item__link {
+    color: var(--color-text);
+    text-decoration: none;
+    font-size: 20px;
+
+}
+
+.item-link__content {
+    width: auto;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: none;
+    justify-content: left;
+    align-items: center;
+    padding: 12px;
+    border-radius: 36px;
+    background-color: transparent;
+    transition: background-color 0.25s ease;
+}
+
+.item-link__content:hover {
+    background-color: var(--color-hover);
+}
+
+.icon__svg {
+    width: 24px;
+    height: auto;
+    fill: var(--color-text);
+}
+/* New Post Section */
+
+.newpost__container {
+    position: relative;
+    margin: 12px 0;
+    fill: var(--color-text)
+}
+
+.newpost__icon {
+    width: 24px;
+    height: auto;
+    display: none;
+}
+
+.newpost__rapidbutton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 36px;
+    background-color: var(--color-brand);
+    width: auto;
+    height: 50px;
+    font-size: 20px;
+    padding: 12px;
+}
+
+/* Profile section */
+
+.profile__image img {
+    width: 50px;
+    height: auto;
+    border-radius: 50%;
+
+}
+
+@media screen and (max-width: 1024px) {
+    .aside__container {
+        width: 88px;
+    }
+    
+    .item-link__text {
+        display: none;
+    }
+
+    .newpost__button {
+        width: 50px;
+        height: 50px;
+    }
+
+    .newpost__icon {
+        width: 24px;
+        height: auto;
+        display: inline-block
+    }
+
+    .newpost__text {
+        display: none;
+    }
+}
+
+/* Desktop */
+
+@media screen and (min-width: 1025px) {
+    .newpost__button {
+        min-height: 50px;
+        cursor: pointer;
+    }
+}

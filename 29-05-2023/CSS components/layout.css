@@ -1,0 +1,57 @@
+#root {
+    height: 300vh;
+    width: 100vw;
+    background-color: var(--color-black);
+}
+
+.page__container {
+    max-width: 1440px;
+    width: 100%;
+    height: 300vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    background-color: var(--color-black);
+}
+
+
+
+.main__container {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(255, 255, 255);
+
+}
+
+.page__content {
+    width: 60%;
+    height: auto;
+}
+
+.filter__container {
+    width: 40%;
+    background-color: var(--color-black);
+}
+
+/* Mobile/Tablet */
+
+@media screen and (max-width: 1024px) {
+
+    .page__content {
+        width: 100%;
+    }
+
+    .filter__container {
+        display: none;
+        
+    }
+    
+}
+
+/* Desktop */
+
+@media screen and (min-width: 1025px) {
+    
+}
