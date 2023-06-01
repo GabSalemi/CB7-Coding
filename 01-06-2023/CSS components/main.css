@@ -1,0 +1,9 @@
+.posts__header {
+    width: 100%;
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.447);
+    backdrop-filter: blur(5px);
+    border-bottom: 0.5px solid white;
+    position: fixed;
+    top: 0;
+}

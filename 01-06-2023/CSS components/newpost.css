@@ -1,0 +1,124 @@
+
+.newpost__section {
+    margin-top: 100px;
+    width: 85vw;
+    height: 160px;
+    background-color: var(--color-black);
+    border-bottom: 0.5px solid lightgrey;
+}
+
+.newpost__form {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    align-items: start;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.newpost__form .tweetprofile__image {
+    width: 20px;
+    height: 20px;
+    margin-left: 20px;
+}
+
+.tweetprofile__image img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.form__inputs {
+    width: 100%;
+    height: auto;
+   
+    background-color: var(--color-black);
+    border: 0;
+} 
+
+.new__input {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    background-color: var(--color-black);
+    border: 0;
+    font-size: 20px;
+    text-align:start;
+    color: var(--color-text)
+}
+
+
+.new__input:focus {
+    border: 0;
+    outline: 0;
+}
+
+/* New Tweet Buttons */
+
+.newpost__buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    padding-right: 20px;
+}
+
+.buttons__list {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    gap: 5px;
+}
+
+.newpost__button {
+    width: 20px;
+    height: 20px;
+    background-color: var(--color-black);
+}
+
+.newpost__button:hover {
+    width: 20px;
+    height: 20px;
+    background-color: var(--color-hover);
+}
+
+
+.newpost-button__logo {
+    width: 20px;
+    height: 20px;
+}
+
+.newpost-button__logo svg {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    fill: var(--color-brand);
+}
+
+/* Add new tweet */
+
+.newtweet__button {
+    width: auto;
+    height: auto;
+    padding: 6px 12px;
+    color: var(--color-text);
+    background-color: var(--color-brand);
+    border-radius: 36px;
+    text-align: center;
+}
+
+@media screen and (min-width: 1025px) {
+    .newpost__section {
+        margin-top: 100px;
+        width: 100%;
+        height: 160px;
+        background-color: var(--color-black);
+        border-bottom: 1px solid lightgrey;
+    }
+}
+
