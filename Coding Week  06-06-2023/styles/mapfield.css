@@ -1,0 +1,6 @@
+.map__field {
+    width: 100%;
+    height: 40vh;
+    background-color: blueviolet;
+    z-index: -99;
+}
