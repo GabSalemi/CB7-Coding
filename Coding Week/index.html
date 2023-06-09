@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/app.css">
+    <script src="script.js" type="module"></script>
+    <script src="utils/fn.js" type="module"></script>
+    <script src="utils/placeData.js" type="module"></script>
+    <script src="utils/graphic.js" type="module"></script>
+    <script src="utils/graphic.js" type="module"></script>
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.css' rel='stylesheet' />
+</head>
+<body>
+    <div id="root">
+        <div class="input__field">
+            <div class="place__select">
+                <h1 class="main__title">WheaterPA</h1>
+                <h2 class="select__text">Seleziona la tua destinazione</h2>
+                
+                <select name="pa__places" id="pa__places">
+                    <option value="placeholder" class="option__ph">Palermo</option>
+                </select>
+            </div>
+
+            <div class="lang__select">
+                <h2 class="lang__text">Scegli la lingua</h2>
+                <div class="lang__buttons">
+                    <input type="button" value="IT" class="lang__it"><input type="button" value="ENG" class="lang__eng">
+                </div>
+            </div>
+
+            <div class="dest__page"></div>
+        </div>
+    </div>
+    
+</body>
+</html>

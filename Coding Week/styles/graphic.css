@@ -1,0 +1,211 @@
+.graphic__div {
+    width: 120px;
+    height: 120px;
+    background-color: transparent;
+    position: absolute;
+    left: 0;
+    bottom: 30vh;
+}
+
+.graphic__field {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    z-index: 20;
+    background-color: transparent;
+    border-radius: 100%;
+}
+
+
+
+/* Sunny graphic */
+
+.sun-graphic__el {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-20%, 0);
+    height: 80%;
+    width: 80%;
+    border-radius: 100%;
+    background: linear-gradient(#191924, #292946);;
+}
+
+.sun-graphic__el:hover {
+    background-color: rgb(168, 116, 78);
+}
+
+.sun-graphic__el:active {
+    background-color: rgb(168, 116, 78);
+}
+
+/* Cloudy graphic */
+
+.first-cloud__el {
+    width: 40%;
+    height: 40%;
+    position: absolute;
+    top: -5%;
+    right: 28%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 100%;
+    
+}
+
+.first-cloud__el::after {
+    content: "";
+    width: 40%;
+    height: 40%;
+    position: absolute;
+    top: 60%;
+    left: 110%;
+    background-color: white;
+    border-radius: 100%;
+}
+
+.second-cloud__el {
+    width: 40%;
+    height: 40%;
+    position: absolute;
+    bottom: 30%;
+    left: -10%;
+    background-color: white;
+    border-radius: 100%;
+}
+
+.second-cloud__el::after {
+    content: "";
+    width: 70%;
+    height: 70%;
+    position: absolute;
+    top: 30%;
+    left: 110%;
+    background-color: white;
+    border-radius: 100%;
+}
+
+
+/* Rainy graphic */
+
+.first-rain__el {
+    width: 100%;
+    height: 5%;
+    position: absolute;
+    bottom: 50%;
+    left: 0;
+    background-color: rgb(206, 206, 206);
+    border-radius: 6px;
+}
+
+.first-rain__el::after {
+    content: "";
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 300%;
+    left: 40%;
+    background-color: rgb(167, 167, 167);
+    border-radius: 6px;
+}
+
+
+.second-rain__el {
+    width: 50%;
+    height: 5%;
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    background-color:  rgb(206, 206, 206);
+    border-radius: 6px;
+}
+
+.second-rain__el::after {
+    content: "";
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 600%;
+    left: -20%;
+    background-color:rgb(167, 167, 167);
+    border-radius: 6px;
+}
+
+/* Misty graphic */
+
+.first-mist__el {
+    width: 100%;
+    height: 5%;
+    position: absolute;
+    bottom: 50%;
+    left: 0;
+    background-color: gray;
+    border-radius: 6px;
+}
+
+.first-mist__el::after {
+    content: "";
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 300%;
+    left: 40%;
+    background-color: rgb(242, 242, 242);
+    border-radius: 6px;
+}
+
+
+.second-mist__el {
+    width: 50%;
+    height: 5%;
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    background-color: gray;
+    border-radius: 6px;
+}
+
+.second-mist__el::after {
+    content: "";
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 600%;
+    left: -20%;
+    background-color: rgb(242, 242, 242);
+    border-radius: 6px;
+}
+
+.sunny {
+    background-color: transparent;
+}
+
+.rainy {
+    background-color: transparent;
+    transform: translateX(-20px) rotate(-50deg);
+}
+
+.cloudy {
+    background-color: transparent;
+}
+
+.misty {
+    background-color:transparent;
+    transform: translateX(-20px) translateY(0) rotate(-3deg);
+}
+
+@media screen and (max-width: 1024px) {
+
+}
+
+@media screen and (min-width: 1025px) {
+    .graphic__div {
+        width: 200px;
+        height: 200px;
+        background-color: transparent;
+        position: absolute;
+        top: -5%;
+        left: 48%;
+        transform: rotate(10deg);
+        z-index: 20;
+    }
+}

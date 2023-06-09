@@ -1,0 +1,52 @@
+.wheater-info__field {
+    background-color: var(--main-color);
+    width: 100%;
+    height: 40vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding-top: 20px;
+    z-index: 2;
+}
+
+.wheater-info__field::before {
+    display: block;
+    content: "";
+    width: 120vw;
+    height: 10vh;
+    background-color: var(--main-color);
+    transform: rotate(-3deg);
+    z-index: -10;
+
+}
+
+@media screen and (max-width: 1024px) {
+    .wheater-info__field::before {
+        position: absolute;
+        bottom: -20px;
+        left: -10px;
+        transform: rotate(-3deg);
+    }
+    
+}
+
+/* Desktop */
+
+@media screen and (min-width: 1025px) {
+    .wheater-info__field {
+        width: 50%;
+        height: 100%;
+    }
+
+    .wheater-info__field::before {
+        background-color: var(--main-color);
+        position: absolute;
+        bottom: 0px;
+        left: -130px;
+        transform: rotate(-88deg);
+
+    }
+}
